@@ -1,15 +1,17 @@
-// import {getTimer} from "./getTimer.js";
 
 import {
     printOutput
 } from "./output.js";
 
 export let time;
+let strTimer;
 export const printTimer = (strong) => {
      
          let timeMinut = parseInt(strong);
          let seconds,minutes,hour;
-         let strTimer;
+         
+
+        
 
     time = setInterval(function () {
       
@@ -33,7 +35,11 @@ export const printTimer = (strong) => {
          Осталось до конца: ${strTimer}`)
         }
         --timeMinut;
+
+        
     }, 1000);
+
+    
 
 }
 
@@ -43,16 +49,13 @@ function soundFinish() {
     audio.autoplay = true;
 }
 
-function stopTimer() {
 
+
+export const stopTimer = () => {
+    
+        clearInterval(time);
+        printOutput(`
+         Таймер остановлен ${strTimer}`)
+    
 }
 
-
-
-
-
-
-
-// export const printTimer =(seconds)=>{
-
-// }
