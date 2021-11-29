@@ -1,0 +1,35 @@
+{
+  "name": "web2_0",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode=production",
+    "start": "webpack serve --mode=development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnnaVishnyakova/web2.0.git"
+  },
+  "author": "anna",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AnnaVishnyakova/web2.0/issues"
+  },
+  "homepage": "https://github.com/AnnaVishnyakova/web2.0#readme",
+  "devDependencies": {
+    "css-loader": "^6.5.1",
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.4.5",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.64.4",
+    "webpack-bundle-analyzer": "^4.5.0",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.6.0"
+  },
+  "dependencies": {
+    "howler": "^2.2.3",
+    "luxon": "^2.1.1"
+  }
+}
