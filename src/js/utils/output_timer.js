@@ -1,7 +1,12 @@
+import {
+    Howl,
+    Howler
+} from 'howler';
 
 import {
     printOutput
 } from "./output.js";
+
 
 export let time;
 let strTimer;
@@ -44,10 +49,18 @@ export const printTimer = (strong) => {
 }
 
 function soundFinish() {
-    var audio = new Audio();
-    audio.src = './js/click.mp3';
-    audio.autoplay = true;
+   var sound = new Howl({
+       src: ['.src/click.mp3']
+   });
+
+   sound.play();
 }
+
+// function soundFinish() {
+//     var audio = new Audio();
+//     audio.src = './js/click.mp3';
+//     audio.autoplay = true;
+// }
 
 
 
